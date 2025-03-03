@@ -7,25 +7,22 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import Button from "./Button";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 function NavBar() {
-  const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(false);
 
   const items = [
     {
-      url: "/#home",
+      url: "/",
       label: "Início",
     },
     {
-      url: "/#menu",
+      url: "#menu",
       label: "Cardápio",
     },
     {
-      url: "/#avaliation",
+      url: "#avaliation",
       label: "Avaliações",
     },
   ];
@@ -38,7 +35,6 @@ function NavBar() {
             className="size-6 text-primary-6"
             icon={faHamburger}
           />
-
           <span className="size-6 text-primary-6">FOOD</span>
         </div>
 
@@ -52,16 +48,12 @@ function NavBar() {
         >
           {items.map((item, index) => (
             <li className="p-2" key={index}>
-              <a
-                className={`no-underline text-neutral-1 font-semibold ${
-                  pathname === item.url
-                    ? "text-black border-b-2 border-primary-3"
-                    : ""
-                }`}
+              <Link
+                className="no-underline text-neutral-1 font-semibold hover:border-b-2 hover:border-primary-5"
                 href={item.url}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

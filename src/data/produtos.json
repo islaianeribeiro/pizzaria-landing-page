@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Margherita",
+    "price": "R$39.9",
+    "image": "/images/dish.png"
+  },
+  {
+    "id": 2,
+    "name": "Hambúrguer Artesanal",
+    "price": "R$25.5",
+    "image": "/images/dish2.png"
+  },
+  {
+    "id": 3,
+    "name": "Sushi Combo",
+    "price": "R$59.9",
+    "image": "/images/dish3.png"
+  },
+  {
+    "id": 4,
+    "name": "Lasanha Bolonhesa",
+    "price": "R$42.0",
+    "image": "/images/dish4.png"
+  }
+]

@@ -1,16 +1,12 @@
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Hero from "../images/hero.png";
 import SocialButton from "@/components/SocialButton";
 import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <section
-      className="flex min-h-[calc(100vh-96px)] relative px-[8%] py-7"
-      id="home"
-    >
+    <section className="flex min-h-[calc(100vh-96px)] relative px-[8%] py-7 mb-12">
       <div className="hidden md:block bg-primary-2 w-[45%] h-full absolute rounded-t-[40%] rounded-l-[30%] rounded-b-[0%] rounded-r-[20%] top-0 right-0 z-1"></div>
       <div className="w-full items-center text-center md:w-[35%] flex flex-col justify-center gap-7">
         <h1 className="text-center text-5xl md:text-justify md:text-6xl font-semibold text-neutral-1">
@@ -49,7 +45,7 @@ export default function Welcome() {
         className="hidden md:flex items-start justify-end w-[70%] z-2"
         id="banner"
       >
-        <Image className="h-full w-fit" src={Hero} alt="foto" />
+        <Image width={500} height={500} src="/images/hero.png" alt="foto" />
       </div>
     </section>
   );

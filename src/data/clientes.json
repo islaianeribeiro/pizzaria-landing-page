@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Carlos Mendes",
+    "avaliation": 5,
+    "depoiment": "A melhor pizza da região! Massa crocante, ingredientes frescos e um sabor incrível. Sempre peço aqui e nunca me decepciono!"
+  },
+  {
+    "id": 2,
+    "name": "Ana Souza",
+    "avaliation": 4,
+    "depoiment": "Entrega super rápida e atendimento excelente! A pizza de quatro queijos é simplesmente divina, recomendo muito!"
+  },
+  {
+    "id": 3,
+    "name": "Ricardo Lima",
+    "avaliation": 5,
+    "depoiment": "Sou fã da pizza de pepperoni, bem recheada e com muito queijo derretendo. Com certeza, a melhor que já comi!"
+  },
+  {
+    "id": 4,
+    "name": "Juliana Pereira",
+    "avaliation": 4,
+    "depoiment": "Pizza deliciosa e preço justo. Além disso, o atendimento é super atencioso! Vale cada centavo."
+  },
+  {
+    "id": 5,
+    "name": "Fernanda Oliveira",
+    "avaliation": 5,
+    "depoiment": "A pizza portuguesa é a minha favorita! Ingredientes bem distribuídos e muito saborosa. Melhor pizzaria da cidade!"
+  }
+]

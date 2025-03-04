@@ -2,12 +2,14 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Button from "./Button";
+import clientes from "@/data/clientes.json";
+import Clientes from "./Clientes";
 
 export default function Avaliations() {
   return (
     <section
       id="avaliation"
-      className="bg-white min-h-[calc(100vh-91px)] flex items-center justify-evenly gap-12 mt-5"
+      className="bg-white min-h-[100vh] flex items-center justify-evenly gap-12 mt-18 p-[60px 0px]"
     >
       <Image
         width={300}
@@ -22,66 +24,14 @@ export default function Avaliations() {
         <h3 className="text-neutral-1 text-2xl">
           O que os clientes falam sobre nós
         </h3>
-
-        <div className="flex flex-col gap-5 mb-10 mt-7">
-          <div className="flex items-center gap-5 bg-[#cccccc] p-3 rounded-xl shadow-custom-2">
-            <Image
-              className="rounded-[100%] object-cover"
-              width={100}
-              height={100}
-              src="/images/avatar.png"
-              alt="avatar1"
-            />
-
-            <div className="feedback-content">
-              <p className="flex justify-between text-neutral-1">
-                Fulana de Tal
-                <span className="text-amber-500">
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                </span>
-              </p>
-              <p className="text-neutral-1">
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat voluptatibus cumque dolor ea est quae alias
-                necessitatibus"
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-5 mb-10 mt-7">
-          <div className="flex items-center gap-5 bg-[#cccccc] p-3 rounded-xl shadow-custom-2">
-            <Image
-              className="rounded-[100%] object-cover"
-              width={100}
-              height={100}
-              src="/images/avatar.png"
-              alt="avatar"
-            />
-
-            <div className="feedback-content">
-              <p className="flex justify-between text-neutral-1">
-                Fulana de Tal
-                <span className="text-amber-500">
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faStar} />
-                </span>
-              </p>
-              <p className="text-neutral-1">
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat voluptatibus cumque dolor ea est quae alias
-                necessitatibus"
-              </p>
-            </div>
-          </div>
-        </div>
+        {clientes.map((depoiments) => (
+          <Clientes
+            key={depoiments.id}
+            name={depoiments.name}
+            avaliation={depoiments.avaliation}
+            depoiment={depoiments.depoiment}
+          />
+        ))}
 
         <Button text="Ver mais avaliações" />
       </div>

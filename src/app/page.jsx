@@ -1,5 +1,6 @@
 import Welcome from "@/components/Welcome";
 import Menu from "@/components/Menu";
+import Avaliations from "@/components/Avaliations";
 
 export default function Home() {
   return (
@@ -7,6 +8,8 @@ export default function Home() {
       <Welcome />
 
       <Menu />
+
+      <Avaliations />
     </>
   );
 }

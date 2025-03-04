@@ -19,6 +19,7 @@ export default function Menu() {
             name={produto.name}
             price={produto.price}
             image={produto.image}
+            description={produto.description}
           />
         ))}
       </div>

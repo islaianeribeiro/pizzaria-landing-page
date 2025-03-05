@@ -16,3 +16,7 @@
   --shadow-custom-1: 0px 0px 10px 2px rgba(134, 7, 0, 0.6);
   --shadow-custom-2: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -15,7 +15,7 @@ function NavBar() {
 
   const items = [
     {
-      url: "/",
+      url: "#home",
       label: "Início",
     },
     {
@@ -51,18 +51,18 @@ function NavBar() {
         >
           {items.map((item, index) => (
             <li className="p-2" key={index}>
-              <Link
+              <a
                 className="no-underline text-neutral-1 font-semibold hover:border-b-2 hover:border-primary-5"
                 href={item.url}
               >
                 {item.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
 
         <button className="hidden md:flex items-center justify-center border-none bg-primary-5 rounded-2xl px-3 py-2 font-semibold shadow-custom-2 cursor-pointer duration-300 ease-in hover:bg-primary-3">
-          Peça aqui
+          <a href="#menu"> Peça aqui</a>
         </button>
 
         <button

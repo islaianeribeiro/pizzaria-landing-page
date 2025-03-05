@@ -1,9 +1,11 @@
 import Image from "next/image";
 import SocialButton from "./SocialButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#ffe8b4]">
+    <footer className="bg-amber-50">
       <Image
         className="w-full"
         width={100}
@@ -14,7 +16,13 @@ export default function Footer() {
 
       <div className="flex flex-col justify-center md:flex md:flex-row md:justify-between p-[0px_8%_24px_8%] items-center">
         <span className="text-neutral-1 font-medium text-center">
-          &copy 2025 Islaiane Ribeiro
+          <FontAwesomeIcon icon={faCopyright} /> 2025{" "}
+          <a
+            href="https://www.linkedin.com/in/islaianeribeiro"
+            className="text-neutral-1 no-underline cursor-pointer"
+          >
+            Islaiane Ribeiro
+          </a>
         </span>
 
         <div className="flex mt-2">

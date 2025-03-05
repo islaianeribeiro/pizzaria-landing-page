@@ -13,9 +13,9 @@ export default function Avaliations() {
       className=" min-h-[100vh] flex items-center justify-evenly gap-12 py-8 lg:flex-row"
     >
       <Image
-        width={300}
-        height={300}
-        src="/images/pizza0.jpg"
+        width={340}
+        height={340}
+        src="/images/pizza.png"
         alt="pizza"
         className="hidden lg:flex"
       />

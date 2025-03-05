@@ -6,9 +6,12 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <section className="flex min-h-[calc(100vh-96px)] relative px-[8%] pb-7 mb-12">
+    <section
+      id="home"
+      className="flex min-h-[calc(100vh-96px)] relative px-[8%] pb-7 mb-12"
+    >
       {/* <div className="hidden md:block bg-primary-2 w-[45%] h-full absolute rounded-t-[40%] rounded-l-[30%] rounded-b-[0%] rounded-r-[20%] top-0 right-0 z-1"></div> */}
-      <div className="w-full items-center text-center md:w-[45%] flex flex-col justify-center gap-7">
+      <div className="w-full items-center text-center flex flex-col justify-center gap-7">
         <h1 className="text-center text-5xl md:text-justify md:text-6xl font-semibold text-neutral-0">
           O sabor que vai até
           <span className="text-primary-6"> você!</span>
@@ -35,7 +38,7 @@ export default function Welcome() {
             <button className="shadow-none bg-primary-5 text-neutral-0 px-1 rounded-xl">
               <FontAwesomeIcon icon={faPhone} />
             </button>
-            (51) 92342-3243
+            (55) 1234-5678
           </Link>
         </div>
 
@@ -43,7 +46,7 @@ export default function Welcome() {
       </div>
 
       <div
-        className="hidden md:flex items-start justify-end w-[70%] z-2 mt-8"
+        className="hidden lg:flex items-start justify-end w-[70%] z-2 mt-8"
         id="banner"
       >
         <Image width={500} height={500} src="/images/hero.jpg" alt="foto" />

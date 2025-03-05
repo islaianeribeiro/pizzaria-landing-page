@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Marguerita",
     "price": "R$39.90",
-    "image": "/images/pizza-quatro-queijos.avif",
+    "image": "/images/pizza-margarita.avif",
     "description": "Molho de tomate, mussarela, manjericão fresco e um toque de azeite."
   },
   {
     "id": 2,
     "name": "Pepperoni",
     "price": "R$44.90",
-    "image": "/images/pizza-quatro-queijos.avif",
+    "image": "/images/pizza-pepperoni.avif",
     "description": "Mussarela derretida e fatias generosas de pepperoni crocante."
   },
   {
@@ -24,21 +24,21 @@
     "id": 4,
     "name": "Frango com Catupiry",
     "price": "R$46.90",
-    "image": "/images/pizza-quatro-queijos.avif",
+    "image": "/images/pizza-frango.webp",
     "description": "Frango desfiado temperado com cremoso Catupiry sobre uma base de mussarela."
   },
   {
     "id": 5,
     "name": "Calabresa",
     "price": "R$42.90",
-    "image": "/images/pizza-quatro-queijos.avif",
+    "image": "/images/pizza-calabresa.avif",
     "description": "Fatias de calabresa levemente picante, cebola e orégano sobre mussarela."
   },
   {
     "id": 6,
     "name": "Portuguesa",
     "price": "R$47.90",
-    "image": "/images/pizza-quatro-queijos.avif",
+    "image": "/images/pizza-portuguesa.jpg",
     "description": "Presunto, ovos, cebola, pimentão, azeitonas e mussarela sobre molho de tomate."
   }
 ]

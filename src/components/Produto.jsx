@@ -13,12 +13,10 @@ export default function Produto({ name, price, image, description }) {
         <FontAwesomeIcon icon={faHeart} />
       </div>
 
-      <div className="w-full flex justify-center mb-4">
+      <div className="flex justify-center mb-4 w-[320px] h-[300px] overflow-hidden border-2 border-primary-6 rounded-2xl">
         <Image
           src={image}
-          width={230}
-          height={230}
-          className="justify-center"
+          className="w-full h-[300px] object-cover object-center"
           alt="Comida"
         />
       </div>

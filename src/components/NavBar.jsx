@@ -29,7 +29,7 @@ function NavBar() {
   ];
 
   return (
-    <header className="w-full px-[8%] py-7 sticky top-0 bg-primary-1 z-3 shadow-custom-1">
+    <header className="w-full px-[8%] py-4 sticky top-0 bg-amber-50 z-3 shadow-custom-1">
       <nav className="w-full flex items-center justify-between" id="navbar">
         <div className="flex items-center gap-1">
           <FontAwesomeIcon
@@ -52,7 +52,7 @@ function NavBar() {
           {items.map((item, index) => (
             <li className="p-2" key={index}>
               <Link
-                className="no-underline text-neutral-0 font-semibold hover:border-b-2 hover:border-primary-5"
+                className="no-underline text-neutral-1 font-semibold hover:border-b-2 hover:border-primary-5"
                 href={item.url}
               >
                 {item.label}

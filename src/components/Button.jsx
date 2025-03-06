@@ -1,7 +1,24 @@
-function Button({ text }) {
-  return (
-    <button className="border-none flex items-center justify-center bg-primary-5 rounded-2xl px-3 py-4 font-semibold shadow-custom cursor-pointer duration-300 ease-in hover:bg-primary-3">
+function Button({ text, onClick, className, icon, href }) {
+  const content = (
+    <>
+      {icon && <span>{icon}</span>} {/* Exibe o ícone, se presente */}
       {text}
+    </>
+  );
+
+  // Se href for passado, renderiza um link
+  if (href) {
+    return (
+      <a href={href} className={`${className}`}>
+        {content}
+      </a>
+    );
+  }
+
+  // Caso contrário, renderiza um botão
+  return (
+    <button onClick={onClick} className={`${className}`}>
+      {content}
     </button>
   );
 }

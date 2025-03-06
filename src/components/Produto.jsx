@@ -1,10 +1,7 @@
-import {
-  faBasketShopping,
-  faHeart,
-  faStar,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBasketShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Button from "./Button";
 
 export default function Produto({ name, price, image, description }) {
   return (
@@ -29,9 +26,10 @@ export default function Produto({ name, price, image, description }) {
 
       <div className="flex justify-center text-center items-center gap-5">
         <h4 className="text-neutral-1">{price}</h4>
-        <button className="bg-primary-5 rounded-2xl px-2 py-1 font-semibold shadow-custom-2 cursor-pointer duration-300 ease-in hover:bg-primary-3">
-          <FontAwesomeIcon icon={faBasketShopping} />
-        </button>
+        <Button
+          className="bg-primary-5 rounded-2xl px-2 py-1 font-semibold shadow-custom-2 cursor-pointer duration-300 ease-in hover:bg-primary-3"
+          icon={<FontAwesomeIcon icon={faBasketShopping} />}
+        />
       </div>
     </div>
   );

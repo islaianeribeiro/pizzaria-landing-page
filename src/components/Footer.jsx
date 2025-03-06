@@ -19,7 +19,7 @@ export default function Footer() {
           <FontAwesomeIcon icon={faCopyright} /> 2025{" "}
           <a
             href="https://www.linkedin.com/in/islaianeribeiro"
-            className="text-neutral-1 no-underline cursor-pointer"
+            className="text-neutral-1 no-underline cursor-pointer hover:text-black"
           >
             Islaiane Ribeiro
           </a>

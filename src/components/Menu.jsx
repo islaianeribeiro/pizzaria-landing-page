@@ -9,7 +9,9 @@ export default function Menu() {
     >
       <div className="text-center">
         <h2 className="text-primary-6 text-2xl">Cardápio</h2>
-        <h3 className="text-neutral-1 text-3xl">Nossos pratos especiais</h3>
+        <h3 className="text-neutral-1 text-2xl md:text-3xl">
+          Nossos pratos especiais
+        </h3>
       </div>
 
       <div className="flex-wrap justify-center md:w-full flex gap-6 mt-8">

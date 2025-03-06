@@ -1,17 +1,19 @@
 "use client";
 
 import {
-  faHamburger,
   faBars,
   faXmark,
   faPizzaSlice,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import { useState } from "react";
+import Button from "./Button";
 
 function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
+  const handleMenuToggle = () => {
+    setOpenMenu(!openMenu);
+  };
 
   const items = [
     {
@@ -47,7 +49,6 @@ function NavBar() {
               ? "flex flex-col items-center absolute top-16 right-8 bg-white shadow-custom-2 p-4 rounded-lg"
               : "hidden"
           } md:flex md:flex-row md:static md:bg-transparent md:shadow-none md:p-0`}
-          id="nav_list"
         >
           {items.map((item, index) => (
             <li className="p-2" key={index}>
@@ -61,20 +62,23 @@ function NavBar() {
           ))}
         </ul>
 
-        <button className="hidden md:flex items-center justify-center border-none bg-primary-5 rounded-2xl px-3 py-2 font-semibold shadow-custom-2 cursor-pointer duration-300 ease-in hover:bg-primary-3">
-          <a href="#menu"> Peça aqui</a>
-        </button>
+        <Button
+          className="hidden md:flex items-center justify-center border-none bg-primary-5 rounded-2xl px-3 py-2 font-semibold shadow-custom-2 cursor-pointer duration-300 ease-in hover:bg-primary-3"
+          href="#menu"
+          text="Peça aqui"
+        />
 
-        <button
+        <Button
           className="block md:hidden text-neutral-1 cursor-pointer"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
-          {openMenu ? (
-            <FontAwesomeIcon icon={faXmark} />
-          ) : (
-            <FontAwesomeIcon icon={faBars} />
-          )}
-        </button>
+          onClick={handleMenuToggle}
+          icon={
+            openMenu ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )
+          }
+        />
       </nav>
     </header>
   );

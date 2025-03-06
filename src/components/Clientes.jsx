@@ -25,7 +25,6 @@ export default function Clientes({ name, avaliation, depoiment }) {
           <p className="flex justify-between text-neutral-1">
             {name}
             <StarRating rating={avaliation} />{" "}
-            {/* Renderiza as estrelas dentro do <span> */}
           </p>
           <p className="text-neutral-1">"{depoiment}"</p>
         </div>

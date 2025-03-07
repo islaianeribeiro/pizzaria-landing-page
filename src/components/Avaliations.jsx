@@ -29,6 +29,7 @@ export default function Avaliations() {
         <h3 className="text-neutral-0 text-xl sm:text-2xl text-center">
           O que os clientes falam sobre nós
         </h3>
+
         <div className="h-110 sm:h-75 overflow-y-auto overflow-x-hidden scrollbar-none mb-2">
           {clientes
             .filter((currentValue, index) => index < items)

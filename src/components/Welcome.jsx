@@ -11,7 +11,7 @@ export default function Welcome() {
       id="home"
       className="flex min-h-[calc(100vh-96px)] relative px-[8%] pb-7 mb-12"
     >
-      <div className="w-full items-center text-center flex flex-col justify-center gap-7 animate-fade-right animate-once animate-ease-out">
+      <div className="w-full items-center text-center flex flex-col justify-center gap-7">
         <h1 className="text-center text-5xl md:text-justify md:text-6xl font-semibold text-neutral-0">
           O sabor que vai até
           <span className="text-primary-6"> você!</span>

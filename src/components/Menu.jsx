@@ -1,4 +1,4 @@
-import Produto from "./Produto";
+import Product from "./Product";
 import produtos from "../data/produtos.json";
 
 export default function Menu() {
@@ -16,7 +16,7 @@ export default function Menu() {
 
       <div className="flex-wrap justify-center md:w-full flex gap-6 mt-8">
         {produtos.map((produto) => (
-          <Produto
+          <Product
             key={produto.id}
             name={produto.name}
             price={produto.price}

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import clientes from "@/data/clientes.json";
-import Clientes from "./Clientes";
+import Clients from "./Clients";
 import { useState } from "react";
 
 export default function Avaliations() {
@@ -34,7 +34,7 @@ export default function Avaliations() {
           {clientes
             .filter((currentValue, index) => index < items)
             .map((depoiments, index) => (
-              <Clientes
+              <Clients
                 key={depoiments.id}
                 name={depoiments.name}
                 avaliation={depoiments.avaliation}

@@ -12,7 +12,7 @@ const StarRating = ({ rating }) => {
   );
 };
 
-export default function Clientes({ name, avaliation, depoiment }) {
+export default function Clients({ name, avaliation, depoiment }) {
   return (
     <div className="flex flex-row sm:flex-col gap-5 m-8 mt-7">
       <div className="flex items-center gap-5 bg-amber-50 p-3 rounded-xl shadow-custom-2">

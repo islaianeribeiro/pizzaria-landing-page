@@ -6,16 +6,17 @@ import {
   faPizzaSlice,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Button from "./Button";
 
 function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
-  const handleMenuToggle = () => {
-    setOpenMenu(!openMenu);
-  };
 
-  const items = [
+  const handleMenuToggle = useCallback(() => {
+    setOpenMenu((prev) => !prev);
+  }, []);
+
+  const menuItems = [
     {
       url: "#home",
       label: "Início",
@@ -44,13 +45,11 @@ function NavBar() {
         </div>
 
         <ul
-          className={`${
-            openMenu
-              ? "flex flex-col items-center absolute top-16 right-8 bg-white shadow-custom-2 p-4 rounded-lg"
-              : "hidden"
-          } md:flex md:flex-row md:static md:bg-transparent md:shadow-none md:p-0`}
+          className={`absolute top-16 right-8 bg-white shadow-custom-2 p-4 rounded-lg flex flex-col items-center 
+          md:flex md:flex-row md:static md:bg-transparent md:shadow-none md:p-0 
+          ${openMenu ? "flex" : "hidden"}`}
         >
-          {items.map((item, index) => (
+          {menuItems.map((item, index) => (
             <li className="p-2" key={index}>
               <a
                 className="no-underline text-neutral-1 font-semibold hover:border-b-2 hover:border-primary-5"
@@ -71,13 +70,8 @@ function NavBar() {
         <Button
           className="block md:hidden text-neutral-1 cursor-pointer"
           onClick={handleMenuToggle}
-          icon={
-            openMenu ? (
-              <FontAwesomeIcon icon={faXmark} />
-            ) : (
-              <FontAwesomeIcon icon={faBars} />
-            )
-          }
+          ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
+          icon={<FontAwesomeIcon icon={openMenu ? faXmark : faBars} />}
         />
       </nav>
     </header>

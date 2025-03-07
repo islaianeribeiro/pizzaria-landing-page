@@ -1,23 +1,21 @@
-function Button({ text, onClick, className, icon, href }) {
+function Button({ text, onClick, className, icon, href, ariaLabel }) {
   const content = (
     <>
-      {icon && <span>{icon}</span>} {/* Exibe o ícone, se presente */}
+      {icon && <span>{icon}</span>}
       {text}
     </>
   );
 
-  // Se href for passado, renderiza um link
   if (href) {
     return (
-      <a href={href} className={`${className}`}>
+      <a href={href} className={className} aria-label={ariaLabel}>
         {content}
       </a>
     );
   }
 
-  // Caso contrário, renderiza um botão
   return (
-    <button onClick={onClick} className={`${className}`}>
+    <button onClick={onClick} className={className} aria-label={ariaLabel}>
       {content}
     </button>
   );

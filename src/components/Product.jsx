@@ -28,6 +28,7 @@ export default function Product({ name, price, image, description }) {
         <h4 className="text-neutral-1">{price}</h4>
         <Button
           className="bg-primary-5 rounded-2xl px-2 py-1 font-semibold shadow-custom-2 cursor-pointer duration-300 ease-in hover:bg-primary-3"
+          ariaLabel="Botão para comprar (sem funcionalidade no momento)"
           icon={<FontAwesomeIcon icon={faBasketShopping} />}
         />
       </div>

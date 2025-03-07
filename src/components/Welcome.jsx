@@ -37,6 +37,7 @@ export default function Welcome() {
           >
             <Button
               className="shadow-none bg-primary-5 text-neutral-0 px-1 rounded-xl"
+              ariaLabel="Botão para telefonar a pizzaria (sem funcionalidade no momento)"
               icon={<FontAwesomeIcon icon={faPhone} />}
             />
             (55) 1234-5678

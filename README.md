@@ -27,7 +27,6 @@ Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar
 │   ├── 📁 components (componentes reutilizáveis)
 │   ├── 📁 data (dados JSON do cardápio e avaliações)
 │   ├── 📁 pages (páginas do projeto)
-│   ├── 📁 styles (arquivos de estilos, se aplicável)
 ├── 📄 package.json
 ├── 📄 README.md
 └── ...

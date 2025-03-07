@@ -11,7 +11,7 @@ export default function Footer() {
         width={100}
         height={100}
         src="/images/wave.svg"
-        alt="Onda"
+        alt="Svg de Onda"
       />
 
       <div className="flex flex-col justify-center md:flex md:flex-row md:justify-between p-[0px_8%_24px_8%] items-center">

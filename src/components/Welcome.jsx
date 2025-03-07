@@ -50,7 +50,12 @@ export default function Welcome() {
         className="hidden lg:flex items-start justify-end w-[70%] z-2 mt-8"
         id="banner"
       >
-        <Image width={500} height={500} src="/images/hero.jpg" alt="foto" />
+        <Image
+          width={500}
+          height={500}
+          src="/images/hero.jpg"
+          alt="Imagem de Pizza"
+        />
       </div>
     </section>
   );

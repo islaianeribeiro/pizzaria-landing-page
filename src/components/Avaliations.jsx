@@ -20,7 +20,7 @@ export default function Avaliations() {
         width={340}
         height={340}
         src="/images/pizza.png"
-        alt="pizza"
+        alt="Imagem de Pizza"
         className="hidden lg:flex"
       />
 

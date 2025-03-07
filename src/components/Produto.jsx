@@ -16,7 +16,7 @@ export default function Produto({ name, price, image, description }) {
           height={300}
           src={image}
           className="w-full h-[300px] object-cover object-center"
-          alt="Comida"
+          alt={`Imagem de Pizza de ${name}`}
         />
       </div>
 

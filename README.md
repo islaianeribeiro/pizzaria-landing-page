@@ -4,7 +4,7 @@
 
 Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar e aprimorar habilidades com **Next.js** e **Tailwind CSS**. O objetivo do projeto é fornecer uma interface responsiva e moderna para apresentação do cardápio e avaliações de clientes.
 
-🔗 Acesse o projeto online: Link do Projeto (https://pizzaria-landing-page-alpha.vercel.app/#avaliation)
+🔗 Acesse o projeto online: Link do Projeto (https://pizzaria-landing-page-alpha.vercel.app)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -26,7 +26,7 @@ Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar
 ├── 📁 src
 │   ├── 📁 components (componentes reutilizáveis)
 │   ├── 📁 data (dados JSON do cardápio e avaliações)
-│   ├── 📁 pages (páginas do projeto)
+│   ├── 📁 app (páginas do projeto)
 ├── 📄 package.json
 ├── 📄 README.md
 └── ...

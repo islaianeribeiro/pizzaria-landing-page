@@ -1,8 +1,12 @@
 # 🍕 Pizzaria - Landing Page
 
-## 📌 Visão Geral
-
 Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar e aprimorar habilidades com **Next.js** e **Tailwind CSS**. O objetivo do projeto é fornecer uma interface responsiva e moderna para apresentação do cardápio e avaliações de clientes.
+
+<div align="center">
+  <img src="./public/screenshot-home.png" alt="Tela inicial." width="100%"/>
+  <img src="./public/screenshot-menu.png" alt="Cardápio da pizzaria." width="100%"/>
+  <img src="./public/screenshot-reviews.png" alt="Avaliações dos clientes." width="100%"/>
+</div>
 
 🔗 Acesse o projeto online: Link do Projeto (https://pizzaria-landing-page-alpha.vercel.app)
 
@@ -98,3 +102,16 @@ Este projeto foi desenvolvido com o intuito de aprimorar minhas habilidades em *
 No futuro, pretendo expandir essa aplicação com novas funcionalidades, como um sistema de pedidos online e integração com APIs externas para melhorar a dinâmica do site.
 
 Se tiver alguma sugestão ou feedback, fique à vontade para contribuir! 😊
+
+## 👩‍💻 Desenvolvido por
+
+**Islaiane Ribeiro**
+Front-End Developer
+
+🔗 [https://www.linkedin.com/in/islaianeribeiro](https://www.linkedin.com/in/islaianeribeiro)
+
+---
+
+## 📝 Licença
+
+MIT © 2025 — Sinta-se à vontade para usar como base para seus próprios projetos!

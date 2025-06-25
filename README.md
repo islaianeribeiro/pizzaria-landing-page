@@ -44,19 +44,28 @@ Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar
 - **Responsividade**: A página é totalmente responsiva.
 - **Footer**: Contém informações de copyright e links para redes sociais.
 
-## 📂 Estrutura do Projeto
+## 🧠 Organização do Código
+
+Estrutura de pastas e arquivos da aplicação:
 
 ```
-📦 pizzaria-landing-page
-├── 📁 public
-│   ├── 📁 images (imagens do projeto)
-├── 📁 src
-│   ├── 📁 components (componentes reutilizáveis)
-│   ├── 📁 data (dados JSON do cardápio e avaliações)
-│   ├── 📁 app (páginas do projeto)
-├── 📄 package.json
-├── 📄 README.md
-└── ...
+📁 public
+├─ 📁 images                  # Imagens utilizadas no projeto
+📁 src
+├─ 📁 app                     # Páginas da aplicação
+├─ 📁 components              # Componentes reutilizáveis
+│  ├─ Avaliations.jsx         # Seção com as avaliações dos clientes
+│  ├─ Button.jsx              # Botão reutilizável estilizado
+│  ├─ Clients.jsx             # Componente de avaliação individual (nome, estrelas, comentário)
+│  ├─ Footer.jsx              # Rodapé com informações e redes sociais
+│  ├─ Menu.jsx                # Lista os produtos (cardápio da pizzaria)
+│  ├─ NavBar.jsx              # Navegação principal do site
+│  ├─ Product.jsx             # Card individual de um produto (pizza)
+│  ├─ SocialButton.jsx        # Botões estilizados para redes sociais
+│  └─ Welcome.jsx             # Seção de boas-vindas com chamada principal (hero)
+├─ 📁 data                    # Dados simulados em JSON
+│  ├─ clientes.json           # Lista de avaliações de clientes (nome, texto, estrelas)
+│  └─ produtos.json           # Lista de produtos (pizzas) com nome, imagem, descrição e preço
 ```
 
 ## 🛠️ Como Rodar o Projeto

@@ -21,21 +21,6 @@ Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar
 - **JavaScript** - Linguagem principal para a implementação de funcionalidades interativas.
 - **JSON** - Utilizado para armazenar os dados do cardápio e depoimentos.
 
-## 📂 Estrutura do Projeto
-
-```
-📦 pizzaria-landing-page
-├── 📁 public
-│   ├── 📁 images (imagens do projeto)
-├── 📁 src
-│   ├── 📁 components (componentes reutilizáveis)
-│   ├── 📁 data (dados JSON do cardápio e avaliações)
-│   ├── 📁 app (páginas do projeto)
-├── 📄 package.json
-├── 📄 README.md
-└── ...
-```
-
 ## 📌 Funcionalidades Principais
 
 ### Tela Inicial:
@@ -58,6 +43,21 @@ Esta é uma landing page fictícia para uma pizzaria, desenvolvida para praticar
 - **Navegação**: Fácil navegação entre as seções.
 - **Responsividade**: A página é totalmente responsiva.
 - **Footer**: Contém informações de copyright e links para redes sociais.
+
+## 📂 Estrutura do Projeto
+
+```
+📦 pizzaria-landing-page
+├── 📁 public
+│   ├── 📁 images (imagens do projeto)
+├── 📁 src
+│   ├── 📁 components (componentes reutilizáveis)
+│   ├── 📁 data (dados JSON do cardápio e avaliações)
+│   ├── 📁 app (páginas do projeto)
+├── 📄 package.json
+├── 📄 README.md
+└── ...
+```
 
 ## 🛠️ Como Rodar o Projeto
 
